@@ -1,0 +1,76 @@
+.pop-Up-box {
+    position: absolute;
+    z-index: 5;
+    background-color: rgb(244, 244, 244);
+    color:#228B78 ;
+    width: 200px;
+    height: 350px;
+    border-radius: 30px;
+    right: 15px;
+    top: 50px;
+    opacity: 0.9;
+    display: none;
+    -webkit-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    -moz-box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+    box-shadow: 4px 4px 8px 0px rgba(34, 60, 80, 0.2);
+     
+}
+
+.pop-Up-box.active  {
+    display: block;
+        @media (min-width: 960px) {
+            display:none;
+        }
+    
+}
+
+.dark-screen    {
+    display: none;
+    position: absolute;
+    height: 100vh;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.50);
+    z-index: 2;
+    overflow: hidden;
+    
+ 
+}
+
+.dark-screen.active{
+    display: block;
+        @media (min-width: 960px) {
+        display: none;
+        }
+}
+
+.links-pop-Up   {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 40px;
+        a   {
+                padding-top: 30px;
+        }
+}
+
+.active {
+    display: block;
+}
+
+// .popUp-bg   {
+//     position: fixed;
+//     width: 100%;
+//     height: 100%;
+//     top:0;
+//     left:0;
+//     background: rgba(0,0,0,0.8);
+//     // display: none;
+// }
+
+.close-popUp    {
+    position: absolute;
+    width: 26px;
+    left: 20px;
+    top: 5px;
+    cursor: pointer;
+}
